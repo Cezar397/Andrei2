@@ -1,0 +1,114 @@
+--------------------------------------------------
+//1148
+int main()
+	{
+   	    int n, i, v[100];
+    	cin>>n;
+
+    	for(i=1; i<=n; i++)
+
+        cin>>v[i];
+
+        if(v[i]%2==0)
+            cout<<"nu exista numere impare";
+        else
+        	 cout<<"exista;
+
+    	return 0;
+	}
+--------------------------------------------------
+
+
+
+
+--------------------------------------------------
+Alexandru este un baiat caruia ii plac numerele. El are intr un vas bilete cu diferite numere. Ajuta l sa afle daca poate gasi numere prime in vas. 
+
+int main()
+{
+    int i, x , ok;
+    
+    if(x<2)
+        return 0;
+        
+    for(i=2;i<=x/2;i++)
+        if(x%i == 0)
+            Ok=0;
+    else
+        Ok=1;
+
+    if(ok==1)
+        cout<<"numarul este prim";
+    else 
+        cout<<numarul nu este prim";
+
+    return 0;
+}
+--------------------------------------------------
+
+
+
+--------------------------------------------------
+//2644
+
+int main()
+{
+    int n,m,ct=0, c[101], p[101], i;
+    cin>>n>>m;
+    
+    for(i=1;i<=n;i++)
+    
+    cin>>c[i];
+    
+    for(j=1;j<=m;j++)
+    
+    cin>>p[j];
+
+    for(i=1;i<=n;i++)
+    {
+         for (j=1;j<=m; j++)
+             if( c[i]==p[j])  
+                ct++;
+     }
+   
+    cout<<ct;
+
+    return 0;
+}
+
+--------------------------------------------------
+
+Matei este elev in clasa a2a . Acesta a trecut la ordonarea numerelor si doreste sa gaseasca dupa ordonarea lor un nr care apare in sirul lui Fibonacci. 
+ 
+Nr Fibonacci: 
+F0=0 F1=1 Fi=Fi-1+Fi-2
+Ex: 0,1,1,2,3,5,8,13,21,34,55...
+
+int main()
+{
+    int V[15], n,i,j,aux,gasit;
+    
+    for(i=1;i<n;i++)
+      for(j=i+1;j<=n;j++)
+          if(V[i]>V[j]) 
+           {
+             aux=V[i] ;
+             V[i]=V[j];
+             V[j]=aux;
+           }
+
+
+for(i=1;i<=n;i++)
+    if( V[i]=V[i-1]+V[i-2] )
+      {
+        gasit=1; 
+      }
+
+     if(gasit=1)
+        cout<<"gasit";
+     else
+        cout<<"nu a gasit";
+
+return 0;
+}
+--------------------------------------------------
